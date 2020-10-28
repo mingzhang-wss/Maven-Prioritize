@@ -1,4 +1,6 @@
 # Maven
+- task: WhiteSource@20
+  inputs:
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
