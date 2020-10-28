@@ -8,6 +8,10 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+- task: VisualStudioTestPlatformInstaller@1
+  inputs:
+    packageFeedSelector: 'nugetOrg'
+    versionSelector: 'latestPreRelease'
 
 steps:
 - task: Maven@3
