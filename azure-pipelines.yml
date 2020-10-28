@@ -8,10 +8,9 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
-- task: VisualStudioTestPlatformInstaller@1
+- task: DotNetCoreCLI@2
   inputs:
-    packageFeedSelector: 'nugetOrg'
-    versionSelector: 'latestPreRelease'
+    command: 'build'
 
 steps:
 - task: Maven@3
